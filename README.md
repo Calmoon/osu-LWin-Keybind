@@ -5,7 +5,7 @@ It makes it emulate the X key only while in-game; when not, it acts normally.
 That means you have to bind whatever it is you want the LWin key bound to, to X instead.  
 
 Uses AutoHotIntercept because for some reason the LWin key is disabled at a very low level in osu!, so more absolute emulation is needed. 
-Using just AutoHotKey for this only <i>kinda</i> works, but this works perfectly.
+Using just AutoHotKey for this only <i>kinda</i> works, but this works perfectly.  
 It assumes you only have one keyboard connected.
 
 Probably needs the <a href="http://www.oblita.com/interception">Interception driver</a> installed, I dunno.  
