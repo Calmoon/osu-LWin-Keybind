@@ -15,4 +15,4 @@ In fact, I have no idea what I'm doing -- this thing took a lot of time even tho
 'Twas a good learning experience, at least.
 
 
-## Download: <a href="https://github.com/Calmoon/osu-LWin-Keybind/releases/latest/download/osu.LWin.Keybind.exe">Latest release</a>
+### Download: <a href="https://github.com/Calmoon/osu-LWin-Keybind/releases/latest/download/osu.LWin.Keybind.exe">Latest release</a>
