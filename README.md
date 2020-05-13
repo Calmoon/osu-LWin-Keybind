@@ -8,11 +8,7 @@ Uses AutoHotInterception because for some reason the LWin key is disabled at a v
 Using just AutoHotKey for this only <i>kinda</i> works, but this works perfectly.  
 It assumes you only have one keyboard connected.
 
-Probably needs the <a href="http://www.oblita.com/interception">Interception driver</a> installed, I dunno.  
-Better install just to be sure.
-
-In fact, I have no idea what I'm doing -- this thing took a lot of time even though it's really simple.  
-'Twas a good learning experience, at least.
+### IMPORTANT: You need the <a href="http://www.oblita.com/interception">Interception driver</a> installed for this to work.
 
 
 ### Download: <a href="https://github.com/Calmoon/osu-LWin-Keybind/releases/latest/download/osu.LWin.Keybind.exe">Latest release</a>
