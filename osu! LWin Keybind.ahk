@@ -1,18 +1,31 @@
-#SingleInstance force
+#SingleInstance
 #Persistent
 #include <AutoHotInterception>
 
 AHI := new AutoHotInterception()
 
+findKeyboardID() {
+	global AHI
+	for index, device in AHI.GetDeviceList() {
+		if not device.isMouse
+			return device.Id
+	}
+	MsgBox, No keyboard was detected.`nThe program will now exit.
+	ExitApp
+}
+
+keyboardID := findKeyboardID()
+
 Loop {
 	WinWaitActive, ahk_exe osu!.exe
-	AHI.SubscribeKey(1, GetKeySC("LWin"), true, Func("KeyEvent"))
+	AHI.SubscribeKey(keyboardID, GetKeySC("LWin"), true, Func("KeyEvent"))
 	
 	WinWaitNotActive, ahk_exe osu!.exe
-	AHI.UnsubscribeKey(1, GetKeySC("LWin"))
+	AHI.UnsubscribeKey(keyboardID, GetKeySC("LWin"))
 }
 
 KeyEvent(state){
-	global AHI
-	AHI.SendKeyEvent(1, GetKeySC("x"), state)
-}
+		global AHI
+		global keyboardID
+		AHI.SendKeyEvent(keyboardID, GetKeySC("z"), state)
+	}
