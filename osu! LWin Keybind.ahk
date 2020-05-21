@@ -25,7 +25,7 @@ Loop {
 }
 
 KeyEvent(state){
-		global AHI
-		global keyboardID
-		AHI.SendKeyEvent(keyboardID, GetKeySC("z"), state)
-	}
+	global AHI
+	global keyboardID
+	AHI.SendKeyEvent(keyboardID, GetKeySC("z"), state)
+}
