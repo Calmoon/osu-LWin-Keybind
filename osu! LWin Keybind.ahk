@@ -7,7 +7,7 @@ AHI := new AutoHotInterception()
 findKeyboardID() {
 	global AHI
 	
-	; lmao, checking if a string is in a list of strings is WEIRD, bruh  
+	; lmao, checking if a string is in a list of strings is WEIRD in this language, bruh  
 	keyboardList := []
 	knownHWIDs := ""
 	for index, device in AHI.GetDeviceList() {
@@ -46,8 +46,8 @@ findKeyboardID() {
 		
 	} else {
 		global keyboardID := keyboardList[1].Id
-		keyboardVIDPID := [keyboardList[1].Vid, keyboardList[1].Pid]
-		saveKeyboardHWID(keyboardVIDPID)
+		KeyboardHWID := [keyboardList[1].Vid, keyboardList[1].Pid]
+		saveKeyboardHWID(KeyboardHWID)
 		return
 	}
 	
