@@ -54,7 +54,7 @@ findKeyboardID() {
 }
 
 TestEvent(keyCode, state) {
-	; If 'state' returns true, a keypress was detected on the current subscribed keyboard in the loop @ line 23
+	; If 'state' returns true, a keypress was detected on the current subscribed keyboard in the loop @ line 30
 	; That means it's the correct one. Read comments in the mentioned loop to understand why
 	if state {
 		saveKeyboardHWID(0)
@@ -64,7 +64,7 @@ TestEvent(keyCode, state) {
 }
 
 saveKeyboardHWID(VIDPID) {
-	if not VIDPID { ; If 0 was passed as the parameter, save the global currentHWID (from the loop @ line 23) instead
+	if not VIDPID { ; If 0 was passed as the parameter, save the global currentHWID (from the loop @ line 30) instead
 		global currentHWID
 		VIDPID := currentHWID
 	}
